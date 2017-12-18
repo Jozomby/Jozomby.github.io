@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "classnames": "^2.2.5"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.3"
+  },
+  "homepage": "https://jozomby.github.io",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
+    "build": "react-scripts build"
+  }
+}

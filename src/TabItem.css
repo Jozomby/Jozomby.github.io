@@ -1,0 +1,13 @@
+.TabItem {
+  display: inline-block;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.TabItem:hover {
+  background-color: #EEEEEE;
+}
+
+.TabItem--selected {
+  background-color: #DDDDDD;
+}

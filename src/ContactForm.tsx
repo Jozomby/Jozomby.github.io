@@ -1,6 +1,7 @@
 import * as React from 'react'
-//import * as firebase from './firebase'
 import './ContactForm.css'
+
+const firebase = require('firebase')
 
 interface Props {
 }
@@ -28,7 +29,6 @@ export default class ContactForm extends React.Component<Props, State> {
   }
 
   handleSubmit = (event: any) => {
-    /*
     event.preventDefault()
     if (this.state.name === '' || this.state.address === '' || this.state.email === '') {
       window.alert("Please fill out all fields before submitting.")
@@ -54,7 +54,6 @@ export default class ContactForm extends React.Component<Props, State> {
         email: ''
       })
     }
-    */
   }
 
   render() {

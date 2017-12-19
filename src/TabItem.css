@@ -1,0 +1,24 @@
+.TabItem {
+  display: inline-block;
+  cursor: pointer;
+  }
+
+  @media (min-width: 606px) {
+    .TabItem {
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 605px) {
+    .TabItem {
+      padding: 10px;
+    }
+  }
+
+.TabItem:hover {
+  background-color: #EEEEEE;
+}
+
+.TabItem--selected {
+  background-color: #DDDDDD;
+}

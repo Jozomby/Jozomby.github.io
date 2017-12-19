@@ -1,0 +1,11 @@
+@media (min-width: 606px) {
+  .Header {
+    padding-top: 58px;
+  }
+}
+
+@media (max-width: 605px) {
+  .Header {
+    padding-top: 38px;
+  }
+}

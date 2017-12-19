@@ -1,3 +1,11 @@
-.Header {
-  padding-top: 58px;
+@media (min-width: 501px) {
+  .Header {
+    padding-top: 58px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Header {
+    padding-top: 38px;
+  }
 }

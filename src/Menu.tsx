@@ -1,5 +1,6 @@
 import * as React from 'react'
 import TabItem from './TabItem'
+import MediaQuery from 'react-responsive'
 import './Menu.css'
 
 interface Props {
@@ -11,9 +12,12 @@ export default class Menu extends React.Component<Props> {
   render() {
     return (
       <div className="Menu">
-        <div className="Menu--logo-container">
-          <h3>Logo/Title</h3>
-        </div>
+        <MediaQuery query="(min-width: 500px)"
+        >
+          <div className="Menu--logo-container">
+            <h3>Logo/Title</h3>
+          </div>
+        </MediaQuery>
         <div className="Menu--links-container">
           <ul>
             <TabItem

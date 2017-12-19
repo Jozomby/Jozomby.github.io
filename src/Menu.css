@@ -9,10 +9,19 @@
   list-style: none;
   text-align: center;
   margin: 0 auto;
+  -webkit-padding-start: 0px;
 }
 
-.Menu--links-container {
-  float: right;
+@media (max-width: 500px) {
+  .Menu--links-container {
+    float: left;
+  }
+}
+
+@media (min-width: 501px) {
+  .Menu--links-container {
+    float: right;
+  }
 }
 
 .Menu--logo-container {

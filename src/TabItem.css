@@ -1,8 +1,19 @@
 .TabItem {
   display: inline-block;
   cursor: pointer;
-  padding: 20px;
-}
+  }
+
+  @media (min-width: 501px) {
+    .TabItem {
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .TabItem {
+      padding: 10px;
+    }
+  }
 
 .TabItem:hover {
   background-color: #EEEEEE;

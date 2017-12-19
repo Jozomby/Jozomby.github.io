@@ -6,7 +6,8 @@ interface Props {
 
 interface State {
   name: string,
-  address: string
+  address: string,
+  email: string
 }
 
 export default class ContactForm extends React.Component<Props, State> {
@@ -14,7 +15,8 @@ export default class ContactForm extends React.Component<Props, State> {
     super(props)
     this.state = {
       name: '',
-      address: ''
+      address: '',
+      email: ''
     }
   }
 
@@ -26,11 +28,16 @@ export default class ContactForm extends React.Component<Props, State> {
 
   handleSubmit = (event: any) => {
     event.preventDefault()
+    if (this.state.name === '' || this.state.address === '' || this.state.email === '') {
+      window.alert("Please fill out all fields before submitting.")
+      return
+    }
     if (firebase && firebase.database) {
       const itemsRef = firebase.database().ref('items')
       const item = {
         name: this.state.name,
-        address: this.state.address
+        address: this.state.address,
+        email: this.state.email
       }
       itemsRef.push(item, (error) => {
         if (error) {
@@ -41,7 +48,8 @@ export default class ContactForm extends React.Component<Props, State> {
       })
       this.setState({
         name: '',
-        address: ''
+        address: '',
+        email: ''
       })
     }
   }
@@ -62,6 +70,13 @@ export default class ContactForm extends React.Component<Props, State> {
           placeholder="Address"
           onChange={this.handleChange}
           value={this.state.address}
+        />
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+          onChange={this.handleChange}
+          value={this.state.email}
         />
         <button>Submit</button>
       </form>

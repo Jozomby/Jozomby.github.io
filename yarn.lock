@@ -86,6 +86,10 @@
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@types/classnames/-/classnames-2.2.3.tgz#3f0ff6873da793870e20a260cada55982f38a9e5"
 
+"@types/firebase@^2.4.32":
+  version "2.4.32"
+  resolved "https://registry.yarnpkg.com/@types/firebase/-/firebase-2.4.32.tgz#96224840717dc514c7db328e85444364dbba34ce"
+
 "@types/jest@^21.1.8":
   version "21.1.8"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-21.1.8.tgz#d497213725684f1e5a37900b17a47c9c018f1a97"

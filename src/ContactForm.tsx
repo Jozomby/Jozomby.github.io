@@ -1,5 +1,6 @@
 import * as React from 'react'
-import firebase from './firebase'
+//import * as firebase from './firebase'
+import './ContactForm.css'
 
 interface Props {
 }
@@ -27,6 +28,7 @@ export default class ContactForm extends React.Component<Props, State> {
   }
 
   handleSubmit = (event: any) => {
+    /*
     event.preventDefault()
     if (this.state.name === '' || this.state.address === '' || this.state.email === '') {
       window.alert("Please fill out all fields before submitting.")
@@ -39,7 +41,7 @@ export default class ContactForm extends React.Component<Props, State> {
         address: this.state.address,
         email: this.state.email
       }
-      itemsRef.push(item, (error) => {
+      itemsRef.push(item, (error: Error) => {
         if (error) {
           window.alert("There was an error saving your information. Refresh the page and try again.  If that doesn't work, please contact Daniel.")
         } else {
@@ -52,6 +54,7 @@ export default class ContactForm extends React.Component<Props, State> {
         email: ''
       })
     }
+    */
   }
 
   render() {
@@ -66,17 +69,16 @@ export default class ContactForm extends React.Component<Props, State> {
         />
         <input
           type="text"
-          name="address"
-          placeholder="Address"
-          onChange={this.handleChange}
-          value={this.state.address}
-        />
-        <input
-          type="text"
           name="email"
           placeholder="Email"
           onChange={this.handleChange}
           value={this.state.email}
+        />
+        <textarea
+          name="address"
+          placeholder="Address"
+          onChange={this.handleChange}
+          value={this.state.address}
         />
         <button>Submit</button>
       </form>

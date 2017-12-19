@@ -3,13 +3,13 @@
   cursor: pointer;
   }
 
-  @media (min-width: 501px) {
+  @media (min-width: 606px) {
     .TabItem {
       padding: 20px;
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 605px) {
     .TabItem {
       padding: 10px;
     }

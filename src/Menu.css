@@ -12,13 +12,13 @@
   -webkit-padding-start: 0px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 605px) {
   .Menu--links-container {
     float: left;
   }
 }
 
-@media (min-width: 501px) {
+@media (min-width: 606px) {
   .Menu--links-container {
     float: right;
   }

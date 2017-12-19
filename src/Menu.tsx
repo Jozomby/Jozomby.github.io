@@ -12,8 +12,7 @@ export default class Menu extends React.Component<Props> {
   render() {
     return (
       <div className="Menu">
-        <MediaQuery query="(min-width: 500px)"
-        >
+        <MediaQuery query="(min-width: 605px)">
           <div className="Menu--logo-container">
             <h3>Logo/Title</h3>
           </div>

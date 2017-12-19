@@ -19,7 +19,7 @@
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.3",

@@ -5,7 +5,7 @@ export default class Page1 extends React.Component {
     return (
       <div>
         <h1>Page 1</h1>
-        <p><strong>This text is really really long so that you can see what happens when you have to scroll the page</strong></p>
+        <p><strong>This text is really really really long so that you can see what happens when you have to scroll the page</strong></p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit ligula a velit rhoncus blandit. Aenean sit amet lacinia sem. Integer auctor tincidunt facilisis. Quisque non tincidunt libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut at pharetra elit, at consectetur sem. Nunc pretium dolor nec diam vehicula, eu blandit nisl bibendum.</p>
         <p>Maecenas eget posuere ex. Phasellus id libero sed leo cursus accumsan. Donec pharetra mauris leo, malesuada luctus tortor viverra quis. Fusce at turpis ipsum. Morbi bibendum non elit bibendum hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam fermentum lobortis porta. Phasellus tincidunt ipsum ipsum, sed porttitor augue luctus sed.</p>
         <p>Pellentesque bibendum elementum velit, a venenatis elit mollis in. In vulputate pellentesque nulla, sed rhoncus nisl suscipit at. Fusce scelerisque nisi eget elit viverra suscipit. In vestibulum rutrum posuere. Curabitur varius lacus malesuada nunc molestie, vel mollis ante imperdiet. Fusce et nisi volutpat metus vehicula interdum. Proin iaculis felis et leo aliquam interdum. Proin turpis dolor, iaculis ac iaculis at, malesuada vitae augue. Praesent venenatis tempus consequat.</p>

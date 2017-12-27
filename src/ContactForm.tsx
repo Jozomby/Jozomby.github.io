@@ -58,29 +58,32 @@ export default class ContactForm extends React.Component<Props, State> {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          onChange={this.handleChange}
-          value={this.state.name}
-        />
-        <input
-          type="text"
-          name="email"
-          placeholder="Email"
-          onChange={this.handleChange}
-          value={this.state.email}
-        />
-        <textarea
-          name="address"
-          placeholder="Address"
-          onChange={this.handleChange}
-          value={this.state.address}
-        />
-        <button>Submit</button>
-      </form>
+      <div className="ContactForm">
+        <p>If you would like a physical invitation (in the mail) please fill out this form by March 1</p>
+        <form onSubmit={this.handleSubmit}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            onChange={this.handleChange}
+            value={this.state.name}
+          />
+          <input
+            type="text"
+            name="email"
+            placeholder="Email"
+            onChange={this.handleChange}
+            value={this.state.email}
+          />
+          <textarea
+            name="address"
+            placeholder="Address"
+            onChange={this.handleChange}
+            value={this.state.address}
+          />
+          <button>Submit</button>
+        </form>
+      </div>
     )
   }
 }

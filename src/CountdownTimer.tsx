@@ -12,16 +12,21 @@ export default class CountdownTimer extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props)
     this.state = {
-      timeRemaining: 1517468400000 - Date.now()
+      timeRemaining: 1525536000000 - Date.now()
     }
   }
 
   tick() {
-    this.setState({ timeRemaining: 1517468400000 - Date.now() })
+    this.setState({ timeRemaining: 1525536000000 - Date.now() })
   }
 
   componentDidMount() {
     window.setInterval(() => this.tick(), 1000)
+  }
+
+  pad = (num: number, size: number) => {
+    const s = "000000000" + num;
+    return s.substr(s.length-size);
   }
 
   formatTime = (milliseconds: number) => {
@@ -35,8 +40,8 @@ export default class CountdownTimer extends React.Component<Props, State> {
     return {
       days: days,
       hours: hours,
-      minutes: minutes,
-      seconds: seconds
+      minutes: this.pad(minutes, 2),
+      seconds: this.pad(seconds, 2)
     }
   }
 
@@ -44,7 +49,7 @@ export default class CountdownTimer extends React.Component<Props, State> {
     const time = this.formatTime(this.state.timeRemaining)
     return (
       <div className='CountdownTimer'>
-        <h2>We will stop accepting contact submissions in:</h2>
+        <h2>Time remaining:</h2>
         <div className='CountdownTimer--time-wrapper'>
           <h1>{`${time.days} Days`}</h1>
           <h1>{`${time.hours}:${time.minutes}:${time.seconds}`}</h1>

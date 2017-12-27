@@ -36,3 +36,8 @@ form {
   margin: 0 auto;
   margin-top: 20px;
 }
+
+.ContactForm p {
+  text-align: center;
+  color: red;
+}

@@ -22,33 +22,27 @@ export default class Menu extends React.Component<Props> {
             <ul>
               <TabItem
                 id={0}
-                title={'Page 1'}
+                title={'Home'}
                 onTabChange={this.props.onTabChange}
                 isSelected={this.props.selectedTab === 0}
               />
               <TabItem
                 id={1}
-                title={'Page 2'}
+                title={'Location'}
                 onTabChange={this.props.onTabChange}
                 isSelected={this.props.selectedTab === 1}
               />
               <TabItem
                 id={2}
-                title={'Page 3'}
+                title={'Gifts & Registry'}
                 onTabChange={this.props.onTabChange}
                 isSelected={this.props.selectedTab === 2}
               />
               <TabItem
                 id={3}
-                title={'Page 4'}
+                title={'FAQs'}
                 onTabChange={this.props.onTabChange}
                 isSelected={this.props.selectedTab === 3}
-              />
-              <TabItem
-                id={4}
-                title={'Page 5'}
-                onTabChange={this.props.onTabChange}
-                isSelected={this.props.selectedTab === 4}
               />
             </ul>
           </div>

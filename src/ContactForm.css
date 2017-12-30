@@ -39,7 +39,8 @@ form {
 
 .ContactForm p {
   text-align: center;
-  color: red;
+  font-weight: bold;
+  color: #006666;
 }
 
 @media (max-width: 605px) {

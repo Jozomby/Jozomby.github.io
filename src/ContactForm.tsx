@@ -1,5 +1,6 @@
 import * as React from 'react'
 import './ContactForm.css'
+import './firebase.ts'
 
 const firebase = require('firebase')
 

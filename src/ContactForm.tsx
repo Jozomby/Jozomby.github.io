@@ -59,8 +59,8 @@ export default class ContactForm extends React.Component<Props, State> {
   render() {
     return (
       <div className="ContactForm">
-        <p>If you would like a physical invitation (in the mail) please fill out this form by March 1</p>
         <form onSubmit={this.handleSubmit}>
+          <p>If you would like a physical invitation (in the mail) please fill out this form by March 1</p>
           <input
             type="text"
             name="name"

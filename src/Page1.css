@@ -1,0 +1,9 @@
+.Page1 h3 {
+  padding-bottom: 0;
+  color: #006666;
+}
+
+.Page1--text-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}

@@ -9,3 +9,9 @@
   box-shadow: 2px 0px 7px #BBBBBB, -2px 0px 7px #BBBBBB;
   padding-bottom: 50px;
 }
+
+@media (max-width: 605px) {
+  .Content {
+    width: 100%;
+  }
+}

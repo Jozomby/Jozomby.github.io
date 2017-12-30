@@ -1,9 +1,9 @@
-.Page1 h3 {
+.Page1 h3, .Page3 h3 {
   padding-bottom: 0;
   color: #006666;
 }
 
-.Page1--text-wrapper {
+.Page1--text-wrapper, .Page3--text-wrapper {
   width: 60%;
   margin: 0 auto;
 }

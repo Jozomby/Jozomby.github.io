@@ -15,10 +15,18 @@
     }
   }
 
+.TabItem {
+  color: #333333;
+  font-weight: bold;
+  height: 19px;
+}
+
 .TabItem:hover {
-  background-color: #EEEEEE;
+  background-color: #008D8D;
+  color: #FFFFFF;
 }
 
 .TabItem--selected {
-  background-color: #DDDDDD;
+  background-color: #008D8D;
+  color: #FFFFFF;
 }

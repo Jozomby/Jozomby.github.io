@@ -32,4 +32,12 @@
 
 .Menu--logo-container h3 {
   margin: 0 auto;
+  font-size: 35px;
+  font-family: trebuchet ms;
+  color: #006666;
+}
+
+.Menu--content {
+  width: 1000px;
+  margin: 0 auto;
 }

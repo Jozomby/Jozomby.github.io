@@ -49,7 +49,7 @@ export default class CountdownTimer extends React.Component<Props, State> {
     const time = this.formatTime(this.state.timeRemaining)
     return (
       <div className='CountdownTimer'>
-        <h2>Time remaining:</h2>
+        <br />
         <div className='CountdownTimer--time-wrapper'>
           <h1>{`${time.days} Days`}</h1>
           <h1>{`${time.hours}:${time.minutes}:${time.seconds}`}</h1>

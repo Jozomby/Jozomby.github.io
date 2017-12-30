@@ -1,3 +1,11 @@
 .Content p {
     text-align: left;
 }
+
+.Content {
+  background-color: white;
+  margin: 0 auto;
+  width: 1000px;
+  box-shadow: 2px 0px 7px #BBBBBB, -2px 0px 7px #BBBBBB;
+  padding-bottom: 50px;
+}

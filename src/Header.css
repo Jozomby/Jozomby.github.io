@@ -1,6 +1,6 @@
 @media (min-width: 606px) {
   .Header {
-    padding-top: 58px;
+    padding-top: 59px;
   }
 }
 
@@ -8,4 +8,10 @@
   .Header {
     padding-top: 38px;
   }
+}
+
+.Header img {
+  height: 100%;
+  width: 100%;
+  display: block;
 }

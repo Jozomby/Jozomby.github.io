@@ -11,10 +11,10 @@ export default class Page3 extends React.Component {
           <h3>Please be aware that we do not need any kitchen supplies except for the items listed on the registries</h3>
           <h3>Thank you so much!</h3>
           <h3>
-            <a href="https://www.amazon.com/wedding/daniel-lee-erin-jacobs-fort-collins-may-2018/registry/7MM024IP35P">Amazon Registry</a>
+            <a href="https://www.amazon.com/wedding/daniel-lee-erin-jacobs-fort-collins-may-2018/registry/7MM024IP35P" target="_BLANK">Amazon Registry</a>
           </h3>
           <h3>
-            <a href="">Target Registry</a>
+            <a href="http://tgt.gifts/erin-daniel" target="_BLANK">Target Registry</a>
           </h3>
         </div>
       </div>

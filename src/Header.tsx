@@ -26,6 +26,7 @@ export default class Header extends React.Component<Props, State> {
     super(props)
     this.state = {
       images: [
+        'library-header2-min.jpg',
         'family.jpg',
         'http://noahfineart.com/wp-content/uploads/2015/07/Star_Wars_header_v4.jpg'
       ],
